@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Evolution Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="html_evolution.html">HTML Evolution</a></li>
+      <li><a href="http_browsers.html">HTTP & Browsers</a></li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Self-Assessment Quiz</h1>
+    <form id="quizForm">
+      <fieldset>
+        <legend>1. Who invented the World Wide Web?</legend>
+        <label><input type="radio" name="q1" value="A" /> A) Bill Gates</label><br/>
+        <label><input type="radio" name="q1" value="B" /> B) Tim Berners-Lee</label><br/>
+        <label><input type="radio" name="q1" value="C" /> C) Steve Jobs</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. What is the role of HTML?</legend>
+        <label><input type="radio" name="q2" value="A" /> A) Styling</label><br/>
+        <label><input type="radio" name="q2" value="B" /> B) Scripting</label><br/>
+        <label><input type="radio" name="q2" value="C" /> C) Structure</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Which HTTP versions offer faster, more secure connections?</legend>
+        <label><input type="radio" name="q3" value="A" /> A) HTTP/0.9</label><br/>
+        <label><input type="radio" name="q3" value="B" /> B) HTTP/1.1</label><br/>
+        <label><input type="radio" name="q3" value="C" /> C) HTTP/2 and HTTP/3</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Fill in the blank: The browser that became dominant in the late 1990s was ____.</legend>
+        <input type="text" name="q4" />
+      </fieldset>
+
+      <fieldset>
+        <legend>5. Which are modern web browsers? (Choose all that apply)</legend>
+        <label><input type="checkbox" name="q5" value="Chrome" /> Chrome</label><br/>
+        <label><input type="checkbox" name="q5" value="Firefox" /> Firefox</label><br/>
+        <label><input type="checkbox" name="q5" value="Internet Explorer" /> Internet Explorer</label><br/>
+        <label><input type="checkbox" name="q5" value="Edge" /> Edge</label>
+      </fieldset>
+
+      <br/>
+      <button type="button" onclick="gradeQuiz()">Submit</button>
+      <button type="reset">Restart</button>
+    </form>
+
+    <div id="results"></div>
+    <script src="quiz.js"></script>
+  </main>
+</body>
+</html>
